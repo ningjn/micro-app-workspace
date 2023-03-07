@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "main-app-ng:dev": "pnpm -F @main-app/angular run start",
+    "main-app-vue:dev": "pnpm -F @main-app/vue run dev",
+    "sub-apps:dev": "pnpm -F @sub-app/demo-angular run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "linux:clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "win:clean:node_modules": "FOR /d /r . %d in (node_modules) DO @IF EXIST '%d' rmdir /s /q '%d'"
   },
   "keywords": [],
   "author": "",
