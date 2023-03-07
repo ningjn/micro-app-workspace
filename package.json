@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "micro-app:vue": "run-p main-app-vue:dev sub-apps:dev",
+    "micro-app:angular": "",
     "main-app-ng:dev": "pnpm -F @main-app/angular run start",
     "main-app-vue:dev": "pnpm -F @main-app/vue run dev",
-    "sub-apps:dev": "pnpm -F @sub-app/demo-angular run dev",
+    "sub-apps:dev": "pnpm -F @sub-app/* run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "linux:clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
@@ -18,6 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "npm-run-all": "^4.1.5"
   }
 }
