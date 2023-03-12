@@ -23,13 +23,13 @@ declare global {
 if (window.__POWERED_BY_WUJIE__) {
     let instance: any;
     window.__WUJIE_MOUNT = () => {
-        const app = createApp(App)
+        instance = createApp(App)
 
-        app.use(WujieVue)
-        app.use(createPinia())
-        app.use(router)
+        instance.use(WujieVue)
+        instance.use(createPinia())
+        instance.use(router)
 
-        app.mount('#app')
+        instance.mount('#app')
     };
     window.__WUJIE_UNMOUNT = () => {
         instance.unmount();
