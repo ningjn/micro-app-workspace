@@ -35,10 +35,12 @@ importers:
       vue: ^3.2.47
       vue-router: ^4.1.6
       vue-tsc: ^1.2.0
+      wujie-vue3: ^1.0.6
     dependencies:
       pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
+      wujie-vue3: 1.0.6_vue@3.2.47
     devDependencies:
       '@rushstack/eslint-patch': 1.2.0
       '@types/node': 18.15.0
@@ -74,10 +76,12 @@ importers:
       vue: ^3.2.47
       vue-router: ^4.1.6
       vue-tsc: ^1.2.0
+      wujie-vue3: ^1.0.6
     dependencies:
       pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
       vue: 3.2.47
       vue-router: 4.1.6_vue@3.2.47
+      wujie-vue3: 1.0.6_vue@3.2.47
     devDependencies:
       '@rushstack/eslint-patch': 1.2.0
       '@types/node': 18.15.0
@@ -359,6 +363,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@babel/runtime/7.21.0:
+    resolution: {integrity: sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.11
+    dev: false
 
   /@babel/template/7.20.7:
     resolution: {integrity: sha512-8SegXApWe6VoNw0r9JHpSteLKTpTiLZ4rMlGIm9JQ18KiCtyQiAMEazujAHrUS5flrcqYZa75ukev3P6QmUwUw==}
@@ -3090,6 +3101,10 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
+  /regenerator-runtime/0.13.11:
+    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
+    dev: false
+
   /regexp.prototype.flags/1.4.3:
     resolution: {integrity: sha512-fjggEOO3slI6Wvgjwflkc4NFRCTZAu5CnNfBd5qOMYhWdn67nJBBu34/TkD++eeFmd8C9r9jfXJ27+nSiRkSUA==}
     engines: {node: '>= 0.4'}
@@ -3696,6 +3711,21 @@ packages:
   /wrappy/1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
+
+  /wujie-vue3/1.0.6_vue@3.2.47:
+    resolution: {integrity: sha512-8pWKCawecfCFrSSSlKo1mdJBLgVm1TODSWkVkpdtzhuBtCpK3YiTGFvr7FYz7P6+5J/gKmbqIu8D0Ix9C1dr0w==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.2.47
+      wujie: 1.0.6
+    dev: false
+
+  /wujie/1.0.6:
+    resolution: {integrity: sha512-fwj/juMiSjQn7SwQzkNQyDqZSds51Hi2ZM6xK2B8tCLLEaribvKFimtdsa0Wsg6CceWoZRkRx+hgEN9dQeiluA==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+    dev: false
 
   /xml-name-validator/4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
